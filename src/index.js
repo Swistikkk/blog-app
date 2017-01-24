@@ -1,11 +1,11 @@
 import React from 'react'
 import { render } from 'react-dom'
-import App from './components/App'
 import { createStore } from 'redux'
-import todoApp from './reducers/reducers'
 import { Provider } from 'react-redux'
+import App from ' ./components/App'
+import blogApp from './reducers/reducers'
 
-let store = createStore( todoApp );
+let store = createStore( blogApp );
 
 render(
     <Provider store={store}>

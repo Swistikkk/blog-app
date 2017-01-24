@@ -1,7 +1,9 @@
-export default function addTodo(text) {
+export const ADD_POST = 'ADD_POST';
+
+export function addPost(title, text) {
     return {
-        type: 'ADD_TODO',
-        text: text,
-        active: true
+        type: ADD_POST,
+        title,
+        text
     }
 }

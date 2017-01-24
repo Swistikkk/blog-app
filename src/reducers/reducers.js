@@ -1,18 +1,21 @@
-let initialState = {
-    todos:[{
-        text: 'simpletext',
-        action: true
-    }]
+import ADD_POST from '../actions/actions';
+
+const initialState = {
+    posts: []
 }
 
-const todoApp = ( state = initialState, action ) => {
-    console.log(action.type);
+let blogApp = function(state = initialState, action) {
     switch(action.type) {
-        case 'ADD_TODO':
-            return {todos: [...state.todos, {text: action.text, active: action.active}]};
+        case ADD_POST:
+            return {
+                posts: [...state.posts, {
+                    title: action.title,
+                    text: action.text
+                }]
+            }
         default:
             return state;
     }
 }
 
-export default todoApp;
+export default blogApp

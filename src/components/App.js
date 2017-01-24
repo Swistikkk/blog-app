@@ -1,13 +1,9 @@
-import React from 'react'
-import AddTodo from '../containers/AddTodo'
-import Todos from '../containers/Todos'
+import React, { Component } from 'react';
 
-
-const App = () => (
-    <div>
-        <AddTodo />
-        <Todos/>
-    </div>
-);
-
-export default App;
+export default class App extends Component {
+    render(){
+        return(
+            <div>This is my blog!</div>
+        )
+    }
+}
