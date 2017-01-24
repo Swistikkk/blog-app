@@ -1,9 +1,11 @@
-export const ADD_POST = 'ADD_POST';
+const ADD_POST = 'ADD_POST';
 
-export function addPost(title, text) {
+function addPost(title, text) {
     return {
         type: ADD_POST,
         title,
         text
     }
 }
+
+export { ADD_POST, addPost }

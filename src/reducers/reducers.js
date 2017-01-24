@@ -1,7 +1,10 @@
-import ADD_POST from '../actions/actions';
+import { ADD_POST } from '../actions/actions';
 
 const initialState = {
-    posts: []
+    posts: [{
+        title: 'myTitle',
+        text: 'myText'
+    }]
 }
 
 let blogApp = function(state = initialState, action) {

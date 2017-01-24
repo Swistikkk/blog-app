@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
+import PostList from '../containers/PostList'
 
-export default class App extends Component {
+class App extends Component {
     render(){
         return(
-            <div>This is my blog!</div>
+            <div>
+                <PostList />
+            </div>
         )
     }
 }
+
+export default App;
