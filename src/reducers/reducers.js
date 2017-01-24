@@ -2,7 +2,7 @@ import { ADD_POST } from '../actions/actions';
 
 const initialState = {
     posts: [{
-        title: 'myTitle',
+        title: 'myTitl',
         text: 'myText'
     }]
 }
